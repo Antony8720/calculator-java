@@ -60,12 +60,8 @@ public class Main {
                 res = num1 * num2;
                 break;
             case "/":
-                try {
-                    res = num1 / num2;
-                }
-                catch (ArithmeticException e){
-                    System.out.println("Zero Division Error: " + e.getMessage());
-                }
+                res = num1 / num2;
+                break;
             default:
                 throw new Exception("Incorrect input data");
         }
