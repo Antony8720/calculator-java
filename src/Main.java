@@ -67,7 +67,7 @@ public class Main {
                     System.out.println("Zero Division Error: " + e.getMessage());
                 }
             default:
-                throw new Exception();
+                throw new Exception("Incorrect input data");
         }
         return res;
     }
@@ -87,7 +87,7 @@ public class Main {
         if (mapRom.get(num) != null){
             return mapRom.get(num);
         }
-        throw new Exception();
+        throw new Exception("Incorrect input data");
     }
     public static String intToRom(int num) {
         String res = "";
